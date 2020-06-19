@@ -1,0 +1,40 @@
+body {
+    margin: 1rem;
+  }
+  
+  ol {
+    counter-reset: n;
+  }
+  
+  ol > li {
+    list-style: none;
+    counter-increment: n;
+  }
+  
+  ol > li::before {
+    content: "Task " counter(n) ":";
+    font-weight: bold;
+  }
+  
+  .btn {
+      display: none;
+  }
+
+  body {
+    font-family: 'Noto Sans',
+    sans-serif;
+    background-image: url("img/wooden-boards-texture-background.jpg");
+    color: #050505;
+  }
+
+  .container {
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+}
+
+  
