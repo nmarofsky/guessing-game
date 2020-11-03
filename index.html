@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Css-->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylez.css">
+    <link rel="icon" type="image/x-icon" href="img/NG-Logo.png" />
+
+    <title>Number Game</title>
+</head>
+
+<body>
+    <video autoplay loop muted>
+        <source src="img/video.mp4" type="video/mp4">
+    </video>
+
+    <div class="container card">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h3>My guess is...</h3>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col text-center">
+                <button class="btn btn-primary" id="startBtn">?</button>
+                <button class="btn btn-primary" id="guessBtn"></button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p id="instructions">Think of a number between 1-100 and click the blue question mark when you're ready.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button id="resetBtn" class="btn btn-success">Reset</button>
+                <div class="btn-group" role="group">
+                    <button id="yesBtn" class="btn btn-success">Yes</button>
+                    <button id="noBtn" class="btn btn-warning">No</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="higherBtn" class="btn btn-dark">Higher</button>
+                    <button id="lowerBtn" class="btn btn-light">Lower</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+
+
+</body>
+
+</html>
